@@ -9,7 +9,7 @@ document.querySelectorAll('div').forEach(item => {
 
 function exportAsPng()
 {
-    html2canvas(document.querySelector("body")).then(canvas => {
+    html2canvas(document.querySelector("#capture")).then(canvas => {
         canvas.toBlob(function(blob){
             saveAs(blob, "git-cheat-sheet.png")
             // let file = new Blob([blob], {type: "application/octet-stream"});
